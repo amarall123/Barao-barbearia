@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barbearia do Barão</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #090909;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  min-height: 100vh;
+  padding: 25px 8%;
+  background: linear-gradient(135deg, #090909, #19150d);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: #d4af37;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid #d4af37;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-size: 13px;
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.small {
+  color: #d4af37;
+  font-size: 12px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(50px, 11vw, 100px);
+  line-height: 0.95;
+  margin-bottom: 25px;
+}
+
+h1 span {
+  color: #d4af37;
+}
+
+.hero p {
+  color: #aaa;
+  font-size: 18px;
+  max-width: 520px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  background: #d4af37;
+  color: #090909;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+section {
+  width: 84%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 90px 0;
+  border-top: 1px solid #292929;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 7vw, 65px);
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about p {
+  color: #999;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.card {
+  margin-top: 30px;
+  padding: 30px;
+  min-height: 220px;
+  background: #111111;
+  border: 1px solid #292929;
+  border-radius: 8px;
+}
+
+.card h3 {
+  color: #d4af37;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  margin: 30px 0 12px;
+}
+
+.card p {
+  color: #888;
+  line-height: 1.7;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.info p {
+  color: #999;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.booking {
+  text-align: center;
+}
+
+.booking p {
+  color: #999;
+  margin-bottom: 30px;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #292929;
+  padding: 35px;
+  color: #666;
+}
+
+@media (max-width: 700px) {
+  .about,
+  .cards,
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 70px 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav>
+  <div class="logo">BARÃO.</div>
+  <a href="#agendar">AGENDAR</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-content">
+
+    <div class="small">
+      BARBEARIA • SÃO MATEUS
+    </div>
+
+    <h1>
+      SEJA UM<br>
+      <span>VERDADEIRO BARÃO.</span>
+    </h1>
+
+    <p>
+      Cabelo, barba e bigode com estilo,
+      precisão e personalidade.
+    </p>
+
+    <a class="button" href="#agendar">
+      AGENDAR HORÁRIO →
+    </a>
+
+  </div>
+</div>
+
+</header>
+
+<section class="about">
+
+<div>
+  <div class="small">A BARBEARIA</div>
+
+  <h2>
+    Seu estilo.<br>
+    Sua presença.
+  </h2>
+</div>
+
+<p>
+  Um espaço para cuidar do visual,
+  renovar o corte e sair se sentindo
+  um verdadeiro Barão.
+</p>
+
+</section>
+
+<section>
+
+<div class="small">SERVIÇOS</div>
+
+<h2>Escolha seu estilo.</h2>
+
+<div class="cards">
+
+<div class="card">
+  <h3>Cabelo</h3>
+  <p>
+    Cortes masculinos do clássico
+    ao moderno.
+  </p>
+</div>
+
+<div class="card">
+  <h3>Barba</h3>
+  <p>
+    Acabamento preciso para deixar
+    o visual alinhado.
+  </p>
+</div>
+
+<div class="card">
+  <h3>Cabelo + Barba</h3>
+  <p>
+    O cuidado completo para renovar
+    seu visual.
+  </p>
+</div>
+
+</div>
+
+</section>
+
+<section class="info">
+
+<div>
+
+<div class="small">ENDEREÇO</div>
+
+<h2>São Mateus.</h2>
+
+<p>
+Rua Padre Café, 131<br>
+São Mateus — Juiz de Fora/MG
+</p>
+
+</div>
+
+<div>
+
+<div class="small">HORÁRIOS</div>
+
+<p>
+<strong>Segunda a sexta</strong><br>
+08:00 — 20:00
+</p>
+
+<p>
+<strong>Sábado</strong><br>
+08:00 — 17:00
+</p>
+
+<p>
+<strong>Domingo</strong><br>
+08:00 — 13:00
+</p>
+
+</div>
+
+</section>
+
+<section class="booking" id="agendar">
+
+<div class="small">AGENDAMENTO</div>
+
+<h2>
+Vamos marcar<br>
+seu horário?
+</h2>
+
+<p>
+Entre em contato com a Barbearia do Barão.
+</p>
+
+<a
+class="button"
+href="https://wa.me/5532999186152"
+target="_blank">
+CHAMAR NO WHATSAPP →
+</a>
+
+</section>
+
+<footer>
+BARBEARIA DO BARÃO • SÃO MATEUS • JUIZ DE FORA
+</footer>
+
+</body>
+</html>
